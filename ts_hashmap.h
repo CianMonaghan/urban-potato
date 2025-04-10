@@ -14,8 +14,8 @@ typedef struct ts_entry_t {
 typedef struct ts_hashmap_t {
    ts_entry_t **table;
    int numOps;
-   int capacity;
-   int size;
+   int capacity; //size of the whole hashmap
+   int size; //how many entries INSIDE hashmap
 } ts_hashmap_t;
 
 // function declarations
